@@ -17,7 +17,8 @@
         <li><a href="#Introduction" class="nav-link">
                 Introduction
             </a></li>
-        <li><a href="#Prequsites and Using the Python Interpreter" class="nav-link">Prequsites and Using the Python Interpreter</a></li>
+        <li><a href="#Prequsites and Using the Python Interpreter" class="nav-link">Prequsites and Using the Python
+                Interpreter</a></li>
         <li><a href="#Argument Passing" class="nav-link"> Argument Passing</a></li>
         <li><a href="#Interactive Mode" class="nav-link">Interactive Mode</a></li>
         <li><a href="#Numbers" class="nav-link">Numbers</a></li>
@@ -87,7 +88,8 @@
     <section class="main-section" id="Interactive Mode">
         <header>Interactive Mode</header>
         <p>When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts
-            for the next command with the primary prompt, usually three greater-than signs (<span> <span> >>> </span>  </span>); for
+            for the next command with the primary prompt, usually three greater-than signs (<span> <span> >>> </span>
+            </span>); for
             continuation lines
             it prompts with the secondary prompt, by default three dots (...). The interpreter prints a welcome message
             stating its version number and a copyright notice before printing the first prompt:</p>
@@ -96,7 +98,7 @@
             [GCC 4.8.2] on linux
             Type "help", "copyright", "credits" or "license" for more information.
             <br>
-            <span> >>> </span> 
+            <span> >>> </span>
         </code>
         <p>As an example, take a look at this simple Hello World! program</p>
         <code>
@@ -133,7 +135,7 @@
 
             Division (/) always returns a float. To do floor division and get an integer result (discarding any
             fractional result) you can use the // operator; to calculate the remainder you can use %:
-            <span> <span> >>> </span>  </span>
+            <span> <span> >>> </span> </span>
 
         </p>
         <code>
@@ -163,7 +165,7 @@
         </code>
         <p>If a variable is not “defined” (assigned a value), trying to use it will give you an error:</p>
         <code>
-            <span> >>> </span>  n # try to access an undefined variable
+            <span> >>> </span> n # try to access an undefined variable
             <br>
             Traceback (most recent call last): <br>
             File <span>"&lt;stdin&gt;"</span>, line 1, in <span>&lt;module&gt;</span> <br>
@@ -177,13 +179,13 @@
             enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape
             quotes:</p>
         <code>
-            <span> >>> </span>  'spam eggs' # single quotes <br>
+            <span> >>> </span> 'spam eggs' # single quotes <br>
             'spam eggs' <br>
-            <span> >>> </span>  'doesn\'t' # use \' to escape the single quote... <br>
+            <span> >>> </span> 'doesn\'t' # use \' to escape the single quote... <br>
             "doesn't" <br>
-            <span> >>> </span>  "doesn't" # ...or use double quotes instead
+            <span> >>> </span> "doesn't" # ...or use double quotes instead
             "doesn't" <br>
-            <span> >>> </span>  '"Yes," they said.' <br>
+            <span> >>> </span> '"Yes," they said.' <br>
             '"Yes," they said.'</code> <br>
     </section>
     <section class="main-section" id="Lists">
@@ -192,46 +194,46 @@
             list, which can be written as a list of comma-separated values (items) between square brackets. Lists might
             contain items of different types, but usually the items all have the same type.</p>
         <code>
-            <span> >>> </span>  squares = [1, 4, 9, 16, 25] <br>
-            <span> >>> </span>  squares <br>
+            <span> >>> </span> squares = [1, 4, 9, 16, 25] <br>
+            <span> >>> </span> squares <br>
             [1, 4, 9, 16, 25]
         </code>
         <p>Like strings (and all other built-in sequence types), lists can be indexed and sliced:</p>
         <code>
-            <span> >>> </span>  squares[0] # indexing returns the item <br>
+            <span> >>> </span> squares[0] # indexing returns the item <br>
             1 <br>
-            <span> >>> </span>  squares[-1] <br>
+            <span> >>> </span> squares[-1] <br>
             25 <br>
-            <span> >>> </span>  squares[-3:] # slicing returns a new list <br>
+            <span> >>> </span> squares[-3:] # slicing returns a new list <br>
             [9, 16, 25]
         </code>
         <p>All slice operations return a new list containing the requested elements. This means that the following slice
             returns a shallow copy of the list:</p>
         <code>
-            <span> >>> </span>  squares[:] <br>
+            <span> >>> </span> squares[:] <br>
             [1, 4, 9, 16, 25]
         </code>
         <p>Lists also support operations like concatenation:</p>
         <code>
-            <span> >>> </span>  squares + [36, 49, 64, 81, 100] <br>
+            <span> >>> </span> squares + [36, 49, 64, 81, 100] <br>
             [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
         </code>
         <p>Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content:
         </p>
         <code>
-            <span> >>> </span>  cubes = [1, 8, 27, 65, 125] # something's wrong here <br>
-            <span> >>> </span>  4 ** 3 # the cube of 4 is 64, not 65! <br>
+            <span> >>> </span> cubes = [1, 8, 27, 65, 125] # something's wrong here <br>
+            <span> >>> </span> 4 ** 3 # the cube of 4 is 64, not 65! <br>
             64 <br>
-            <span> >>> </span>  cubes[3] = 64 # replace the wrong value <br>
-            <span> >>> </span>  cubes <br>
+            <span> >>> </span> cubes[3] = 64 # replace the wrong value <br>
+            <span> >>> </span> cubes <br>
             [1, 8, 27, 64, 125]
         </code>
         <p>You can also add new items at the end of the list, by using the append() method (we will see more about
             methods later):</p>
         <code>
-            <span> >>> </span>  cubes.append(216) # add the cube of 6 <br>
-            <span> >>> </span>  cubes.append(7 ** 3) # and the cube of 7 <br>
-            <span> >>> </span>  cubes <br>
+            <span> >>> </span> cubes.append(216) # add the cube of 6 <br>
+            <span> >>> </span> cubes.append(7 ** 3) # and the cube of 7 <br>
+            <span> >>> </span> cubes <br>
             [1, 8, 27, 64, 125, 216, 343]
         </code>
 
@@ -241,9 +243,9 @@
         <header>if Statements</header>
         <p>Perhaps the most well-known statement type is the if statement. For example:</p>
         <code>
-            <span> >>> </span>  x = int(input("Please enter an integer: ")) <br>
+            <span> >>> </span> x = int(input("Please enter an integer: ")) <br>
             Please enter an integer: 42 <br>
-            <span> >>> </span>  if x < 0: <br>
+            <span> >>> </span> if x < 0: <br>
                 ... &emsp;&emsp;&emsp;&emsp;x = 0 <br>
                 ... &emsp;&emsp;&emsp;&emsp;print('Negative changed to zero') <br>
                 ... elif x == 0: <br>
@@ -268,9 +270,9 @@
             of any sequence (a list or a string), in the order that they appear in the sequence. For example (no pun
             intended):</p>
         <code>
-            <span> >>> </span>  # Measure some strings: <br>
+            <span> >>> </span> # Measure some strings: <br>
             ... words = ['cat', 'window', 'defenestrate'] <br>
-            <span> >>> </span>  for w in words: <br>
+            <span> >>> </span> for w in words: <br>
             ... print(w, len(w)) <br>
             ... <br>
             cat 3 <br>
@@ -304,7 +306,7 @@
         <p>If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It
             generates arithmetic progressions:</p>
         <code>
-            <span> >>> </span>  for i in range(5): <br>
+            <span> >>> </span> for i in range(5): <br>
             ...&emsp;&emsp;&emsp;&emsp;print(i) <br>
             ... <br>
             0 <br>
@@ -328,8 +330,8 @@
         </code>
         <p>To iterate over the indices of a sequence, you can combine range() and len() as follows:</p>
         <code>
-            <span> >>> </span>  a = ['Mary', 'had', 'a', 'little', 'lamb']
-            <span> >>> </span>  for i in range(len(a)): <br>
+            <span> >>> </span> a = ['Mary', 'had', 'a', 'little', 'lamb']
+            <span> >>> </span> for i in range(len(a)): <br>
             ...&emsp;&emsp;&emsp;&emsp;print(i, a[i]) <br>
             ... <br>
             0 Maya <br>
@@ -343,7 +345,7 @@
             A strange thing happens if you just print a range:</p>
 
         <code>
-            <span> >>> </span>  print(range(10)) <br>
+            <span> >>> </span> print(range(10)) <br>
             range(0, 10)
         </code>
         <p>In many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. It is an object
@@ -353,63 +355,70 @@
             something from which they can obtain successive items until the supply is exhausted. We have seen that the
             for statement is such a construct, while an example of a function that takes an iterable is sum():</p>
         <code>
-            <span> >>> </span>  sum(range(4)) # 0 + 1 + 2 + 3
+            <span> >>> </span> sum(range(4)) # 0 + 1 + 2 + 3
             <br> 6</code>
-         <p>Later we will see more functions that return iterables and take iterables as arguments. Lastly, maybe you are curious about how to get a list from a range. Here is the solution:</p>   
-            <code>
-                <span> >>> </span>  list(range(4))
-<br> [0, 1, 2, 3]
+        <p>Later we will see more functions that return iterables and take iterables as arguments. Lastly, maybe you are
+            curious about how to get a list from a range. Here is the solution:</p>
+        <code>
+            <span> >>> </span> list(range(4))
+            <br> [0, 1, 2, 3]
 
-            </code>
+        </code>
 
 
-        </section>
-<br>
+    </section>
+    <br>
     <section class="main-section" id="break and continue Statements, and else Clauses on Loops">
         <header>break and continue Statements, and else Clauses on Loops
 
         </header>
 
         <p>The break statement, like in C, breaks out of the innermost enclosing for or while loop.</p>
-<p>Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the iterable (with for) or when the condition becomes false (with while), but not when the loop is terminated by a break statement. This is exemplified by the following loop, which searches for prime numbers:</p>
-<code>
-    <span> >>> </span>  for n in range(2, 10):
-    ... &emsp;&emsp;&emsp;&emsp;for x in range(2, n):
-    ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if n % x == 0: <br>
-    ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(n, 'equals', x, '*', n//x)
-  <br>  ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break <br>
-    ... &emsp;&emsp;&emsp;&emsp;else: <br>
-   <br> ...         # loop fell through without finding a factor
-   <br> ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(n, 'is a prime number')
-    ... <br>
-    2 is a prime number <br>
-    3 is a prime number <br>
-    4 equals 2 * 2 <br>
-    5 is a prime number <br>
-    6 equals 2 * 3 <br>
-    7 is a prime number <br>
-    8 equals 2 * 4 <br>
-    9 equals 3 * 3 
-</code>
+        <p>Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the
+            iterable (with for) or when the condition becomes false (with while), but not when the loop is terminated by
+            a break statement. This is exemplified by the following loop, which searches for prime numbers:</p>
+        <code>
+            <span> >>> </span> for n in range(2, 10):
+            ... &emsp;&emsp;&emsp;&emsp;for x in range(2, n):
+            ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if n % x == 0: <br>
+            ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(n, 'equals', x, '*', n//x)
+            <br> ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break <br>
+            ... &emsp;&emsp;&emsp;&emsp;else: <br>
+            <br> ... # loop fell through without finding a factor
+            <br> ... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(n, 'is a prime number')
+            ... <br>
+            2 is a prime number <br>
+            3 is a prime number <br>
+            4 equals 2 * 2 <br>
+            5 is a prime number <br>
+            6 equals 2 * 3 <br>
+            7 is a prime number <br>
+            8 equals 2 * 4 <br>
+            9 equals 3 * 3
+        </code>
 
-<p>(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)</p>
-<p>When used with a loop, the else clause has more in common with the else clause of a try statement than it does with that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause runs when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.</p>
-<p>The continue statement, also borrowed from C, continues with the next iteration of the loop:</p>
-<code>
-    <span> >>> </span>  for num in range(2, 10): <br>
-...&emsp;&emsp;&emsp;&emsp;if num % 2 == 0: <br>
-...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print("Found an even number", num) <br>
-...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;continue <br>
-...&emsp;&emsp;&emsp;&emsp;print("Found an odd number", num) <br>
-Found an even number 2 <br>
-Found an odd number 3 <br>
-Found an even number 4 <br>
-Found an odd number 5 <br>
-Found an even number 6 <br>
-Found an odd number 7 <br>
-Found an even number 8 <br>
-Found an odd number 9 
-</code>
+        <p>(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)
+        </p>
+        <p>When used with a loop, the else clause has more in common with the else clause of a try statement than it
+            does with that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s
+            else clause runs when no break occurs. For more on the try statement and exceptions, see Handling
+            Exceptions.</p>
+        <p>The continue statement, also borrowed from C, continues with the next iteration of the loop:</p>
+        <code>
+            <span> >>> </span> for num in range(2, 10): <br>
+            ...&emsp;&emsp;&emsp;&emsp;if num % 2 == 0: <br>
+            ...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print("Found an even number", num) <br>
+            ...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;continue <br>
+            ...&emsp;&emsp;&emsp;&emsp;print("Found an odd number", num) <br>
+            Found an even number 2 <br>
+            Found an odd number 3 <br>
+            Found an even number 4 <br>
+            Found an odd number 5 <br>
+            Found an even number 6 <br>
+            Found an odd number 7 <br>
+            Found an even number 8 <br>
+            Found an odd number 9
+        </code>
 
 
 
@@ -417,31 +426,33 @@ Found an odd number 9
     </section>
     <section class="main-section" id="pass Statements">
         <header>pass Statements</header>
-        <p>The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example:</p>
+        <p>The pass statement does nothing. It can be used when a statement is required syntactically but the program
+            requires no action. For example:</p>
 
         <code>
-            <span> >>> </span>  while True:
-...&emsp;&emsp;&emsp;&emsp;pass  # Busy-wait for keyboard interrupt (Ctrl+C)
-...
+            <span> >>> </span> while True:
+            ...&emsp;&emsp;&emsp;&emsp;pass # Busy-wait for keyboard interrupt (Ctrl+C)
+            ...
         </code>
-<p>This is commonly used for creating minimal classes:</p>
-<code>
-    <span> >>> </span>  class MyEmptyClass:
-...&emsp;&emsp;&emsp;&emsp;pass
-...
-</code>
-<p>Another place pass can be used is as a place-holder for a function or conditional body when you are working on new code, allowing you to keep thinking at a more abstract level. The pass is silently ignored:</p>
+        <p>This is commonly used for creating minimal classes:</p>
+        <code>
+            <span> >>> </span> class MyEmptyClass:
+            ...&emsp;&emsp;&emsp;&emsp;pass
+            ...
+        </code>
+        <p>Another place pass can be used is as a place-holder for a function or conditional body when you are working
+            on new code, allowing you to keep thinking at a more abstract level. The pass is silently ignored:</p>
 
-<code>
-    <span> >>> </span>  def initlog(*args):
-...&emsp;&emsp;&emsp;&emsp;pass   # Remember to implement this!
-...
-</code>
+        <code>
+            <span> >>> </span> def initlog(*args):
+            ...&emsp;&emsp;&emsp;&emsp;pass # Remember to implement this!
+            ...
+        </code>
 
 
 
     </section>
-   <br>
+    <br>
 
     <section class="main-section" id="Defining Functions">
         <header>Defining Functions</header>
@@ -449,38 +460,59 @@ Found an odd number 9
         <p>We can create a function that writes the Fibonacci series to an arbitrary boundary:</p>
 
         <code>
-            <span> >>> </span>  def fib(n):    # write Fibonacci series up to n 
-<br>...&emsp;&emsp;&emsp;&emsp;"""Print a Fibonacci series up to n.""" <br>
-...&emsp;&emsp;&emsp;&emsp;a, b = 0, 1 <br>
-...&emsp;&emsp;&emsp;&emsp;while a < n: <br>
-...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(a, end=' ') <br>
-...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a, b = b, a+b <br>
-...&emsp;&emsp;&emsp;&emsp;print() <br>
-... <br>
-<span> >>> </span>  # Now call the function we just defined: <br>
-... fib(2000) <br>
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
+            <span> >>> </span> def fib(n): # write Fibonacci series up to n
+            <br>...&emsp;&emsp;&emsp;&emsp;"""Print a Fibonacci series up to n.""" <br>
+            ...&emsp;&emsp;&emsp;&emsp;a, b = 0, 1 <br>
+            ...&emsp;&emsp;&emsp;&emsp;while a < n: <br>
+                ...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(a, end=' ') <br>
+                ...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a, b = b, a+b <br>
+                ...&emsp;&emsp;&emsp;&emsp;print() <br>
+                ... <br>
+                <span> >>> </span> # Now call the function we just defined: <br>
+                ... fib(2000) <br>
+                0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
         </code>
-<p>The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.</p>
-<p>The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or docstring. (More about docstrings can be found in the section Documentation Strings.) There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.</p>
-<p>The execution of a function introduces a new symbol table used for the local variables of the function. More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables and variables of enclosing functions cannot be directly assigned a value within a function (unless, for global variables, named in a global statement, or, for variables of enclosing functions, named in a nonlocal statement), although they may be referenced.</p>
-<p>The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using call by value (where the value is always an object reference, not the value of the object). 1 When a function calls another function, a new local symbol table is created for that call.</p>
-<p>A function definition associates the function name with the function object in the current symbol table. The interpreter recognizes the object pointed to by that name as a user-defined function. Other names can also point to that same function object and can also be used to access the function:</p>
-<code>
-    <span> >>> </span>  fib <br>
-<function fib at 10042ed0> <br>
-<span> >>> </span>  f = fib <br>
-<span> >>> </span>  f(100) <br>
-0 1 1 2 3 5 8 13 21 34 55 89
-</code>
-<p>Coming from other languages, you might object that fib is not a function but a procedure since it doesn’t return a value. In fact, even functions without a return statement do return a value, albeit a rather boring one. This value is called None (it’s a built-in name). Writing the value None is normally suppressed by the interpreter if it would be the only value written. You can see it if you really want to using print():</p>
+        <p>The keyword def introduces a function definition. It must be followed by the function name and the
+            parenthesized list of formal parameters. The statements that form the body of the function start at the next
+            line, and must be indented.</p>
+        <p>The first statement of the function body can optionally be a string literal; this string literal is the
+            function’s documentation string, or docstring. (More about docstrings can be found in the section
+            Documentation Strings.) There are tools which use docstrings to automatically produce online or printed
+            documentation, or to let the user interactively browse through code; it’s good practice to include
+            docstrings in code that you write, so make a habit of it.</p>
+        <p>The execution of a function introduces a new symbol table used for the local variables of the function. More
+            precisely, all variable assignments in a function store the value in the local symbol table; whereas
+            variable references first look in the local symbol table, then in the local symbol tables of enclosing
+            functions, then in the global symbol table, and finally in the table of built-in names. Thus, global
+            variables and variables of enclosing functions cannot be directly assigned a value within a function
+            (unless, for global variables, named in a global statement, or, for variables of enclosing functions, named
+            in a nonlocal statement), although they may be referenced.</p>
+        <p>The actual parameters (arguments) to a function call are introduced in the local symbol table of the called
+            function when it is called; thus, arguments are passed using call by value (where the value is always an
+            object reference, not the value of the object). 1 When a function calls another function, a new local symbol
+            table is created for that call.</p>
+        <p>A function definition associates the function name with the function object in the current symbol table. The
+            interpreter recognizes the object pointed to by that name as a user-defined function. Other names can also
+            point to that same function object and can also be used to access the function:</p>
+        <code>
+            <span> >>> </span> fib <br>
+            <function fib at 10042ed0> <br>
+                <span> >>> </span> f = fib <br>
+                <span> >>> </span> f(100) <br>
+                0 1 1 2 3 5 8 13 21 34 55 89
+        </code>
+        <p>Coming from other languages, you might object that fib is not a function but a procedure since it doesn’t
+            return a value. In fact, even functions without a return statement do return a value, albeit a rather boring
+            one. This value is called None (it’s a built-in name). Writing the value None is normally suppressed by the
+            interpreter if it would be the only value written. You can see it if you really want to using print():</p>
 
 
     </section>
 
     <section class="main-section" id="Default Argument Values">
         <header>Default Argument Values</header>
-        <p>The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is defined to allow. For example:</p>
+        <p>The most useful form is to specify a default value for one or more arguments. This creates a function that
+            can be called with fewer arguments than it is defined to allow. For example:</p>
         <code>
             def ask_ok(prompt, retries=4, reminder='Please try again!'): <br>
             &emsp;&emsp;&emsp;&emsp;while True: <br>
@@ -491,7 +523,8 @@ Found an odd number 9
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return False <br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;retries = retries - 1 <br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if retries &lt; 0: <br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;raise ValueError('invalid user response') <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;raise ValueError('invalid user
+            response') <br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(reminder)
         </code>
         <p><strong>This function can be called in several ways:</strong></p>
@@ -503,7 +536,8 @@ Found an odd number 9
     </section>
     <section class="main-section" id="Keyword Arguments">
         <header>Keyword Arguments</header>
-        <p>Functions can also be called using keyword arguments of the form kwarg=value. For instance, the following function:</p>
+        <p>Functions can also be called using keyword arguments of the form kwarg=value. For instance, the following
+            function:</p>
         <code>
             def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
             &emsp;&emsp;&emsp;&emsp;print("-- This parrot wouldn't", action, end=' ')
@@ -511,50 +545,63 @@ Found an odd number 9
             &emsp;&emsp;&emsp;&emsp;print("-- Lovely plumage, the", type)
             &emsp;&emsp;&emsp;&emsp;print("-- It's", state, "!")
         </code>
-        <p>accepts one required argument (voltage) and three optional arguments (state, action, and type). This function can be called in any of the following ways:</p>
+        <p>accepts one required argument (voltage) and three optional arguments (state, action, and type). This function
+            can be called in any of the following ways:</p>
         <code>
 
 
-parrot(1000)                                          # 1 positional argument <br>
-parrot(voltage=1000)                                  # 1 keyword argument <br>
-parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments <br>
-parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments <br>
-parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments <br>
-parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+            parrot(1000) # 1 positional argument <br>
+            parrot(voltage=1000) # 1 keyword argument <br>
+            parrot(voltage=1000000, action='VOOOOOM') # 2 keyword arguments <br>
+            parrot(action='VOOOOOM', voltage=1000000) # 2 keyword arguments <br>
+            parrot('a million', 'bereft of life', 'jump') # 3 positional arguments <br>
+            parrot('a thousand', state='pushing up the daisies') # 1 positional, 1 keyword
 
 
         </code>
-<p>but all the following calls would be invalid:</p>
+        <p>but all the following calls would be invalid:</p>
 
-<code>
-    parrot()                     # required argument missing <br>
-parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument <br>
-parrot(110, voltage=220)     # duplicate value for the same argument <br>
-parrot(actor='John Cleese')  # unknown keyword argument <br>
-</code>
-<p>
+        <code>
+            parrot() # required argument missing <br>
+            parrot(voltage=5.0, 'dead') # non-keyword argument after a keyword argument <br>
+            parrot(110, voltage=220) # duplicate value for the same argument <br>
+            parrot(actor='John Cleese') # unknown keyword argument <br>
+        </code>
+        <p>
 
-    In a function call, keyword arguments must follow positional arguments. All the keyword arguments passed must match one of the arguments accepted by the function (e.g. actor is not a valid argument for the parrot function), and their order is not important. This also includes non-optional arguments (e.g. parrot(voltage=1000) is valid too). No argument may receive a value more than once. </p>
-   
-</section>
-<section class="main-section" id="Special parameters">
-    <header>Special parameters</header>
-    <p>By default, arguments may be passed to a Python function either by position or explicitly by keyword. For readability and performance, it makes sense to restrict the way arguments can be passed so that a developer need only look at the function definition to determine if items are passed by position, by position or keyword, or by keyword.</p>
-<p>A function definition may look like:</p>
-<code>
-    <p>def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2): <br>
-&emsp;&emsp;&emsp;-----------&emsp;&emsp;&emsp;----------&emsp;&emsp;&emsp;---------- <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;|&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;  Positional or keyword &emsp;| <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;       |                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           - Keyword only <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- Positional only</p>
-    </code>
-    <p>where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.</p>
-</section>
-<section class="main-section" id="Reference">
-    <header>Reference</header>
-    <p>Every single Piece of Material is taken from <a href="https://docs.python.org/3/">https://docs.python.org/3/</a></p>
-</section>
+            In a function call, keyword arguments must follow positional arguments. All the keyword arguments passed
+            must match one of the arguments accepted by the function (e.g. actor is not a valid argument for the parrot
+            function), and their order is not important. This also includes non-optional arguments (e.g.
+            parrot(voltage=1000) is valid too). No argument may receive a value more than once. </p>
+
+    </section>
+    <section class="main-section" id="Special parameters">
+        <header>Special parameters</header>
+        <p>By default, arguments may be passed to a Python function either by position or explicitly by keyword. For
+            readability and performance, it makes sense to restrict the way arguments can be passed so that a developer
+            need only look at the function definition to determine if items are passed by position, by position or
+            keyword, or by keyword.</p>
+        <p>A function definition may look like:</p>
+        <code>
+            <p>def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2): <br>
+                &emsp;&emsp;&emsp;-----------&emsp;&emsp;&emsp;----------&emsp;&emsp;&emsp;---------- <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;|&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp; Positional or keyword &emsp;| <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                - Keyword only <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- Positional only</p>
+        </code>
+        <p>where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be
+            passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are
+            also referred to as named parameters.</p>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>Every single Piece of Material is taken from <a
+                href="https://docs.python.org/3/">https://docs.python.org/3/</a></p>
+    </section>
 
 </main>
 
