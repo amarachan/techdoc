@@ -478,7 +478,7 @@ Found an odd number 9
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="Default Argument Values">
         <header>Default Argument Values</header>
         <p>The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is defined to allow. For example:</p>
         <code>
@@ -501,7 +501,7 @@ Found an odd number 9
             <li>or even giving all arguments: ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')</li>
         </ul>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Keyword Arguments">
         <header>Keyword Arguments</header>
         <p>Functions can also be called using keyword arguments of the form kwarg=value. For instance, the following function:</p>
         <code>
@@ -537,7 +537,7 @@ parrot(actor='John Cleese')  # unknown keyword argument <br>
     In a function call, keyword arguments must follow positional arguments. All the keyword arguments passed must match one of the arguments accepted by the function (e.g. actor is not a valid argument for the parrot function), and their order is not important. This also includes non-optional arguments (e.g. parrot(voltage=1000) is valid too). No argument may receive a value more than once. </p>
    
 </section>
-<section class="main-section">
+<section class="main-section" id="Special parameters">
     <header>Special parameters</header>
     <p>By default, arguments may be passed to a Python function either by position or explicitly by keyword. For readability and performance, it makes sense to restrict the way arguments can be passed so that a developer need only look at the function definition to determine if items are passed by position, by position or keyword, or by keyword.</p>
 <p>A function definition may look like:</p>
@@ -551,7 +551,7 @@ parrot(actor='John Cleese')  # unknown keyword argument <br>
     </code>
     <p>where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.</p>
 </section>
-<section class="main-section">
+<section class="main-section" id="Reference">
     <header>Reference</header>
     <p>Every single Piece of Material is taken from <a href="https://docs.python.org/3/">https://docs.python.org/3/</a></p>
 </section>
