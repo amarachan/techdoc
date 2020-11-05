@@ -17,20 +17,20 @@
         <li><a href="#Introduction" class="nav-link">
                 Introduction
             </a></li>
-        <li><a href="" class="nav-link">Prequsites and Using the Python Interpreter</a></li>
-        <li><a href="" class="nav-link"> Argument Passing</a></li>
-        <li><a href="" class="nav-link">Interactive Mode</a></li>
-        <li><a href="" class="nav-link">Numbers</a></li>
-        <li><a href="" class="nav-link">Lists</a></li>
-        <li><a href="" class="nav-link">if Statements</a></li>
-        <li><a href="" class="nav-link">for Statements</a></li>
-        <li><a href="" class="nav-link">The range() Function</a></li>
-        <li><a href="" class="nav-link">pass Statements</a></li>
-        <li><a href="" class="nav-link">Defining Functions</a></li>
-        <li><a href="" class="nav-link">Default Argument Values</a></li>
-        <li><a href="" class="nav-link">Keyword Arguments</a></li>
-        <li><a href="" class="nav-link">Special parameters</a></li>
-        <li><a href="" class="nav-link">Reference</a></li>
+        <li><a href="#Prequsites and Using the Python Interpreter" class="nav-link">Prequsites and Using the Python Interpreter</a></li>
+        <li><a href="#Argument Passing" class="nav-link"> Argument Passing</a></li>
+        <li><a href="#Interactive Mode" class="nav-link">Interactive Mode</a></li>
+        <li><a href="#Numbers" class="nav-link">Numbers</a></li>
+        <li><a href="#Lists" class="nav-link">Lists</a></li>
+        <li><a href="#if Statements" class="nav-link">if Statements</a></li>
+        <li><a href="#for Statements" class="nav-link">for Statements</a></li>
+        <li><a href="#The range() Function" class="nav-link">The range() Function</a></li>
+        <li><a href="#pass Statements" class="nav-link">pass Statements</a></li>
+        <li><a href="#Defining Functions" class="nav-link">Defining Functions</a></li>
+        <li><a href="#Default Argument Values" class="nav-link">Default Argument Values</a></li>
+        <li><a href="#Keyword Arguments" class="nav-link">Keyword Arguments</a></li>
+        <li><a href="#Special parameters" class="nav-link">Special parameters</a></li>
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
     </ul>
 </nav>
 <main id="main-doc">
@@ -73,7 +73,7 @@
 
 
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Argument Passing">
         <header>Argument Passing</header>
         <p>When known to the interpreter, the script name and additional arguments thereafter are turned into a list of
             strings and assigned to the argv variable in the sys module. You can access this list by executing import
@@ -84,7 +84,7 @@
             interpreter’s option processing but left in sys.argv for the command or module to handle.
         </p>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Interactive Mode">
         <header>Interactive Mode</header>
         <p>When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts
             for the next command with the primary prompt, usually three greater-than signs (<span> <span> >>> </span>  </span>); for
@@ -105,7 +105,7 @@
             Hello World!
         </code>
     </section> <br>
-    <section class="main-section">
+    <section class="main-section" id="Numbers">
         <header>Numbers</header>
         <p>The interpreter acts as a simple calculator: you can type an expression at it and it will write the value.
             Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages
@@ -171,7 +171,7 @@
         </code>
     </section>
     <br>
-    <section class="main-section">
+    <section class="main-section" id="Strings">
         <header>Strings</header>
         <p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be
             enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape
@@ -186,7 +186,7 @@
             <span> >>> </span>  '"Yes," they said.' <br>
             '"Yes," they said.'</code> <br>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Lists">
         <header>Lists</header>
         <p>Python knows a number of compound data types, used to group together other values. The most versatile is the
             list, which can be written as a list of comma-separated values (items) between square brackets. Lists might
@@ -237,7 +237,7 @@
 
     </section>
     <br>
-    <section class="main-section">
+    <section class="main-section" id="if Statements">
         <header>if Statements</header>
         <p>Perhaps the most well-known statement type is the if statement. For example:</p>
         <code>
@@ -260,7 +260,7 @@
             switch or case statements found in other languages.</p>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="for Statements">
         <header>for Statements</header>
         <p>The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always
             iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to
@@ -299,7 +299,7 @@
 
     </section>
     <br>
-    <section class="main-section">
+    <section class="main-section" id="The range() Function">
         <header>The range() Function</header>
         <p>If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It
             generates arithmetic progressions:</p>
@@ -365,7 +365,7 @@
 
         </section>
 <br>
-    <section class="main-section">
+    <section class="main-section" id="break and continue Statements, and else Clauses on Loops">
         <header>break and continue Statements, and else Clauses on Loops
 
         </header>
@@ -415,7 +415,7 @@ Found an odd number 9
 
 
     </section>
-    <section class="main-section">
+    <section class="main-section" id="pass Statements">
         <header>pass Statements</header>
         <p>The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example:</p>
 
@@ -443,7 +443,7 @@ Found an odd number 9
     </section>
    <br>
 
-    <section class="main-section">
+    <section class="main-section" id="Defining Functions">
         <header>Defining Functions</header>
 
         <p>We can create a function that writes the Fibonacci series to an arbitrary boundary:</p>
