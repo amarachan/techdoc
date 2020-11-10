@@ -14,24 +14,25 @@
 <nav id="navbar">
     <header>Python Documentation</header>
     <ul>
-        <li><a href="#Introduction" class="nav-link">
+        <li><a href="#Introduction" >
                 Introduction
             </a></li>
-        <li><a href="#Prequsites and Using the Python Interpreter" class="nav-link">Prequsites and Using the Python
+        <li><a href="#Prequsites_and_Using_the_Python_Interpreter" >Prequsites and Using the Python
                 Interpreter</a></li>
-        <li><a href="#Argument Passing" class="nav-link"> Argument Passing</a></li>
-        <li><a href="#Interactive Mode" class="nav-link">Interactive Mode</a></li>
-        <li><a href="#Numbers" class="nav-link">Numbers</a></li>
-        <li><a href="#Lists" class="nav-link">Lists</a></li>
-        <li><a href="#if Statements" class="nav-link">if Statements</a></li>
-        <li><a href="#for Statements" class="nav-link">for Statements</a></li>
-        <li><a href="#The range() Function" class="nav-link">The range() Function</a></li>
-        <li><a href="#pass Statements" class="nav-link">pass Statements</a></li>
-        <li><a href="#Defining Functions" class="nav-link">Defining Functions</a></li>
-        <li><a href="#Default Argument Values" class="nav-link">Default Argument Values</a></li>
-        <li><a href="#Keyword Arguments" class="nav-link">Keyword Arguments</a></li>
-        <li><a href="#Special parameters" class="nav-link">Special parameters</a></li>
-        <li><a href="#Reference" class="nav-link">Reference</a></li>
+        <li><a class="nav-link" href="#Argument_Passing" > Argument Passing</a></li>
+        <li><a class="nav-link" href="#Interactive_Mode" >Interactive Mode</a></li>
+        <li><a class="nav-link" href="#Numbers" >Numbers</a></li>
+        <li><a class="nav-link" href="#Lists" >Lists</a></li>
+        <li><a class="nav-link" href="#if_Statements" >if Statements</a></li>
+        <li><a class="nav-link" href="#for_Statements" >for Statements</a></li>
+        <li><a class="nav-link" href="#The_range()_Function" >The range() Function</a></li>
+        <li><a class="nav-link" href="#break_and_continue_Statements,_and_else_Clauses_on_Loops" >break and continue Statements, and else Clauses on Loops</a></li>
+        <li><a class="nav-link" href="#pass_Statements" >pass Statements</a></li>
+        <li><a class="nav-link" href="#Defining_Functions" >Defining Functions</a></li>
+        <li><a class="nav-link" href="#Default_Argument_Values" >Default Argument Values</a></li>
+        <li><a class="nav-link" href="#Keyword_Arguments" >Keyword Arguments</a></li>
+        <li><a class="nav-link" href="#Special_parameters" >Special parameters</a></li>
+        <li><a  class="nav-link" href="#Reference" >Reference</a></li>
     </ul>
 </nav>
 <main id="main-doc">
@@ -48,12 +49,12 @@
         <p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other
             languages callable from C). Python is also suitable as an extension language for customizable applications.
         </p>
-    </section>
+</section>
 
-    <section class="main-section" id="Prequsites and Using the Python Interpreter">
+    <section class="main-section" id="Prequsites_and_Using_the_Python_Interpreter">
         <header>Prequsites and Using the Python Interpreter</header>
         <p>A computer with any operating system like Linux (debian, redhat etc), windows, macos and python can
-            downloaded and installed from <a href="https://www.python.org">www.python.org</a></p>
+            downloaded and installed from <a href="https://www.python.org" target="_blank">www.python.org</a></p>
         <p><strong>Invoking the Interpreter</strong></p>
         <ul>
             <li>
@@ -73,8 +74,8 @@
         </ul>
 
 
-    </section>
-    <section class="main-section" id="Argument Passing">
+</section>
+    <section class="main-section" id="Argument_Passing">
         <header>Argument Passing</header>
         <p>When known to the interpreter, the script name and additional arguments thereafter are turned into a list of
             strings and assigned to the argv variable in the sys module. You can access this list by executing import
@@ -84,8 +85,8 @@
             of the located module. Options found after -c command or -m module are not consumed by the Python
             interpreter’s option processing but left in sys.argv for the command or module to handle.
         </p>
-    </section>
-    <section class="main-section" id="Interactive Mode">
+</section>
+    <section class="main-section" id="Interactive_Mode">
         <header>Interactive Mode</header>
         <p>When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts
             for the next command with the primary prompt, usually three greater-than signs (<span> <span> >>> </span>
@@ -106,7 +107,7 @@
             <br>
             Hello World!
         </code>
-    </section> <br>
+</section> <br>
     <section class="main-section" id="Numbers">
         <header>Numbers</header>
         <p>The interpreter acts as a simple calculator: you can type an expression at it and it will write the value.
@@ -171,7 +172,7 @@
             File <span>"&lt;stdin&gt;"</span>, line 1, in <span>&lt;module&gt;</span> <br>
             NameError: name 'n' is not defined <br>
         </code>
-    </section>
+</section>
     <br>
     <section class="main-section" id="Strings">
         <header>Strings</header>
@@ -187,7 +188,7 @@
             "doesn't" <br>
             <span> >>> </span> '"Yes," they said.' <br>
             '"Yes," they said.'</code> <br>
-    </section>
+</section>
     <section class="main-section" id="Lists">
         <header>Lists</header>
         <p>Python knows a number of compound data types, used to group together other values. The most versatile is the
@@ -237,9 +238,9 @@
             [1, 8, 27, 64, 125, 216, 343]
         </code>
 
-    </section>
+</section>
     <br>
-    <section class="main-section" id="if Statements">
+    <section class="main-section" id="if_Statements">
         <header>if Statements</header>
         <p>Perhaps the most well-known statement type is the if statement. For example:</p>
         <code>
@@ -260,9 +261,9 @@
         <p>There can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else
             if’, and is useful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the
             switch or case statements found in other languages.</p>
-    </section>
+</section>
 
-    <section class="main-section" id="for Statements">
+    <section class="main-section" id="for_Statements">
         <header>for Statements</header>
         <p>The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always
             iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to
@@ -299,9 +300,9 @@
         </code>
 
 
-    </section>
+</section>
     <br>
-    <section class="main-section" id="The range() Function">
+    <section class="main-section" id="The_range()_Function">
         <header>The range() Function</header>
         <p>If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It
             generates arithmetic progressions:</p>
@@ -366,9 +367,9 @@
         </code>
 
 
-    </section>
+</section>
     <br>
-    <section class="main-section" id="break and continue Statements, and else Clauses on Loops">
+    <section class="main-section" id="break_and_continue_Statements,_and_else_Clauses_on_Loops">
         <header>break and continue Statements, and else Clauses on Loops
 
         </header>
@@ -423,8 +424,8 @@
 
 
 
-    </section>
-    <section class="main-section" id="pass Statements">
+</section>
+    <section class="main-section" id="pass_Statements">
         <header>pass Statements</header>
         <p>The pass statement does nothing. It can be used when a statement is required syntactically but the program
             requires no action. For example:</p>
@@ -451,10 +452,10 @@
 
 
 
-    </section>
+</section>
     <br>
 
-    <section class="main-section" id="Defining Functions">
+    <section class="main-section" id="Defining_Functions">
         <header>Defining Functions</header>
 
         <p>We can create a function that writes the Fibonacci series to an arbitrary boundary:</p>
@@ -507,9 +508,9 @@
             interpreter if it would be the only value written. You can see it if you really want to using print():</p>
 
 
-    </section>
+</section>
 
-    <section class="main-section" id="Default Argument Values">
+    <section class="main-section" id="Default_Argument_Values">
         <header>Default Argument Values</header>
         <p>The most useful form is to specify a default value for one or more arguments. This creates a function that
             can be called with fewer arguments than it is defined to allow. For example:</p>
@@ -533,8 +534,8 @@
             <li>giving one of the optional arguments: ask_ok('OK to overwrite the file?', 2)</li>
             <li>or even giving all arguments: ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')</li>
         </ul>
-    </section>
-    <section class="main-section" id="Keyword Arguments">
+</section>
+    <section class="main-section" id="Keyword_Arguments">
         <header>Keyword Arguments</header>
         <p>Functions can also be called using keyword arguments of the form kwarg=value. For instance, the following
             function:</p>
@@ -574,8 +575,8 @@
             function), and their order is not important. This also includes non-optional arguments (e.g.
             parrot(voltage=1000) is valid too). No argument may receive a value more than once. </p>
 
-    </section>
-    <section class="main-section" id="Special parameters">
+</section>
+    <section class="main-section" id="Special_parameters">
         <header>Special parameters</header>
         <p>By default, arguments may be passed to a Python function either by position or explicitly by keyword. For
             readability and performance, it makes sense to restrict the way arguments can be passed so that a developer
@@ -596,12 +597,12 @@
         <p>where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be
             passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are
             also referred to as named parameters.</p>
-    </section>
+</section>
     <section class="main-section" id="Reference">
         <header>Reference</header>
         <p>Every single Piece of Material is taken from <a
                 href="https://docs.python.org/3/">https://docs.python.org/3/</a></p>
-    </section>
+</section>
 
 </main>
 
